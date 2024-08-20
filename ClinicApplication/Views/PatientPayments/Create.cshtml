@@ -1,0 +1,53 @@
+﻿@model ClinicApplication.Models.PatientPaymentModel
+
+@{
+    ViewData["Title"] = "Create Patient Payment";
+}
+
+<h1 class="my-4">Create</h1>
+
+<form asp-action="Create">
+    <div class="form-group mb-3">
+        <label asp-for="PatientName" class="form-label"></label>
+        <input asp-for="PatientName" class="form-control" />
+        <span asp-validation-for="PatientName" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="AmountPaid" class="form-label"></label>
+        <input asp-for="AmountPaid" type="number" step="0.01" class="form-control" />
+        <span asp-validation-for="AmountPaid" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="AmountCharge" class="form-label"></label>
+        <input asp-for="AmountCharge" type="number" step="0.01" class="form-control" />
+        <span asp-validation-for="AmountCharge" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="PaymentMethod" class="control-label"></label>
+        <select asp-for="PaymentMethod" class="form-control">
+            <option value="">Select Payment Method</option>
+            <option value="Cash">Cash</option>
+            <option value="E-Payment">E-Payment</option>
+        </select>
+        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+    </div>
+     <div class="form-group mb-3">
+        <label asp-for="Procedure" class="control-label"></label>
+        <select asp-for="Procedure" class="form-control">
+            <option value="">Select Procedure</option>
+            <option value="Exo">Extraction (Exo)</option>
+            <option value="Filling">Restorative (Filling)</option>
+            <option value="OP">Oral Prophylaxis (OP)</option>
+            <option value="RPD">Prosthodontics (RPD)</option>
+            <option value="FB">Prosthodontics (FB)</option>
+        </select>
+        <span asp-validation-for="Procedure" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
