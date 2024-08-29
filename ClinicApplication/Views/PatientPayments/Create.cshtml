@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create Patient Payment";
 }
 
-<h1 class="my-4">Create</h1>
+<h1 class="my-4">Create Transaction Record</h1>
 
 <form asp-action="Create">
     <div class="form-group mb-3">
@@ -28,6 +28,8 @@
             <option value="">Select Payment Method</option>
             <option value="Cash">Cash</option>
             <option value="E-Payment">E-Payment</option>
+            <option value="No-Payment">No-Payment</option>
+            <option value="Free">Free</option>
         </select>
         <span asp-validation-for="PaymentMethod" class="text-danger"></span>
     </div>

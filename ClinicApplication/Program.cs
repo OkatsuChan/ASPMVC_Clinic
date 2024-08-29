@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using ClinicApplication.Data; // Adjust this namespace to match your project
+using ClinicApplication.Data;
+using ClinicApplication.Services;
+// Adjust this namespace to match your project
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IPatientPaymentService, PatientPaymentService>();
+
 
 var app = builder.Build();
 

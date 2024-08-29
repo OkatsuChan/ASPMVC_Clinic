@@ -2,14 +2,15 @@
 
 namespace ClinicApplication.Models
 {
-    public class PatientPaymentModel
+    public class TreatmentRecordModel
     {
         [Key]
         public int Id { get; set; }
+        [Required,StringLength(100)]
+        public string? PatientName { get; set; }
 
         [Required]
-        [StringLength(100)]
-        public string PatientName { get; set; } = string.Empty;
+        public string? Procedure { get; set; }
 
         [Required]
         [Range(0, double.MaxValue, ErrorMessage = "Amount must be a positive value")]
@@ -19,15 +20,22 @@ namespace ClinicApplication.Models
         [Range(0, double.MaxValue, ErrorMessage = "Amount must be a positive value")]
         public decimal AmountCharge { get; set; }
 
-       
+        [Required]
+        [Range(0, double.MaxValue, ErrorMessage = "Amount must be a positive value")]
+        public decimal Balance { get; set; }
+
         public DateTime DateSubmitted { get; set; } = DateTime.Now;
 
         [Required]
-        [StringLength(50)]
-        public string PaymentMethod { get; set; }=string.Empty;
+        public DateTime Recall { get; set; }
 
-        [Required]
-        [StringLength(50)]
-        public string Procedure { get; set; } = string.Empty;
+
+
+
+
+
+
+
+
     }
 }
