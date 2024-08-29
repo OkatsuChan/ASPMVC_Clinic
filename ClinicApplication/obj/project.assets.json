@@ -4111,11 +4111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\WebApp\\ClinicApplication\\ClinicApplication.csproj",
+      "projectUniqueName": "C:\\Users\\chris\\OneDrive\\Desktop\\MVC_Clinic_Project\\ClinicApplication\\ClinicApplication.csproj",
       "projectName": "ClinicApplication",
-      "projectPath": "C:\\Users\\chris\\source\\repos\\WebApp\\ClinicApplication\\ClinicApplication.csproj",
+      "projectPath": "C:\\Users\\chris\\OneDrive\\Desktop\\MVC_Clinic_Project\\ClinicApplication\\ClinicApplication.csproj",
       "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\source\\repos\\WebApp\\ClinicApplication\\obj\\",
+      "outputPath": "C:\\Users\\chris\\OneDrive\\Desktop\\MVC_Clinic_Project\\ClinicApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,6 +13,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IPatientPaymentService, PatientPaymentService>();
 
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
