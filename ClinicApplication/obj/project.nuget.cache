@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zF6yhakEvSE=",
+  "dgSpecHash": "NBxDuhsmJAE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\OneDrive\\Desktop\\MVC_Clinic_Project\\ClinicApplication\\ClinicApplication.csproj",
+  "projectFilePath": "C:\\Users\\chris\\source\\repos\\WebApp\\ClinicApplication\\ClinicApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

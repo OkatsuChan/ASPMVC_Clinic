@@ -1,0 +1,74 @@
+﻿
+
+@{
+    ViewData["Title"] = "Record";
+}
+
+<div class="container my-5">
+    <h1 class="mb-4">Treatment Form</h1>
+    <form id="treatmentForm" method="post">
+        <div class="mb-3">
+            <label for="treatmentType" class="form-label">Treatment Type</label>
+            <select id="treatmentType" name="TreatmentType" class="form-select">
+                <option value="">Select Treatment</option>
+                <option value="Restorative">Restorative</option>
+                <option value="Extraction">Extraction</option>
+                <!-- Add more treatment options as needed -->
+            </select>
+        </div>
+
+        <!-- Restorative Fields -->
+        <div id="restorativeFields" class="treatment-details" style="display: none;">
+            <h4 class="mb-3">Restorative Treatment Details</h4>
+            <div class="mb-3">
+                <label for="toothNumber" class="form-label">Tooth Number</label>
+                <input type="text" id="toothNumber" name="ToothNumber" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="surface" class="form-label">Surface</label>
+                <input type="text" id="surface" name="Surface" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="liner" class="form-label">Liner</label>
+                <input type="text" id="liner" name="Liner" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="cement" class="form-label">Cement</label>
+                <input type="text" id="cement" name="Cement" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="procedure" class="form-label">Procedure</label>
+                <input type="text" id="procedure" name="Procedure" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="homeCareInstruction" class="form-label">Home Care Instruction</label>
+                <textarea id="homeCareInstruction" name="HomeCareInstruction" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <!-- Extraction Fields -->
+        <div id="extractionFields" class="treatment-details" style="display: none;">
+            <h4 class="mb-3">Extraction Treatment Details</h4>
+            <div class="mb-3">
+                <label for="toothNumberExtraction" class="form-label">Tooth Number</label>
+                <input type="text" id="toothNumberExtraction" name="ToothNumberExtraction" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="extractionDetails" class="form-label">Extraction Details</label>
+                <input type="text" id="extractionDetails" name="ExtractionDetails" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="postExtractionCare" class="form-label">Post Extraction Care</label>
+                <textarea id="postExtractionCare" name="PostExtractionCare" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <!-- Add other treatment details sections here -->
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="~/js/treatmentForm.js"></script>
+}
